@@ -1,6 +1,5 @@
-module.exports = function(app, passport) {
+module.exports = function(app) {
 
-    var wordGame = require('../my_modules/wordGame.js');
     var jadeObject = require('../app/jadeObject.js');
 
     app.get('/', preReq, function (req, res) {

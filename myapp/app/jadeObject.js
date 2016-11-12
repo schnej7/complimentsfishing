@@ -41,11 +41,6 @@ function JadeObject(req){
         this.customSEO = isCustom;
         return this;
     }
-
-    if( req.isAuthenticated() ) {
-        this.auth = true;
-        this.setUser(req);
-    }
 };
 
 exports.noSocial = function(req, title) {
@@ -54,11 +49,6 @@ exports.noSocial = function(req, title) {
 }
 
 exports.basic = function(req, title) {
-    var jo = new JadeObject(req);
-    return jo.setTitle(title);
-}
-
-exports.auth = function(req, title) {
     var jo = new JadeObject(req);
     return jo.setTitle(title);
 }
