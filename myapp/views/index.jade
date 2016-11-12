@@ -1,19 +1,13 @@
 extends static_layout
 
-mixin linkBox(url, imageUrl, title, desc)
-    if( imageUrl != '' )
-        a.linkBox(href="#{url}", style="background-image:url('#{imageUrl}')")
-            div.title #{title}
-            div.desc #{desc}
-    else
-        a.linkBox.colored(href="#{url}")
-            div.title #{title}
-            div.desc #{desc}
-
 block pageBody
-    script(src="/js/base/scroller.js")
     div.jumbotron
         div.container
             h1 Fishing for Compliments
-            p life's a fish
+            p put it in your mouth
 
+    div.content
+        div.section-row
+            div.trailer
+                iframe(width="560" height="315" src="https://www.youtube.com/embed/umF8i9Bm4xs?list=PL4GmdLu3_qyWt0rnuSV8fmiRPMTVqp3OW" frameborder="0" allowfullscreen)
+            div.description I'm awesome and this is where I'm going to talk about it

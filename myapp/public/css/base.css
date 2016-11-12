@@ -7,12 +7,18 @@ h3
 {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
 }
 
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
 a:hover
 {
-  -color: #6b67ef;
-  color: #df2626;
+  color: #00506f;
   text-decoration: none;
 }
 
@@ -20,137 +26,49 @@ a
 {
   color: #1798cb;
 }
-
-.nav>li>a:hover,
-.nav>li>a:focus {
-  background: none;
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  background-color: #fff;
+  box-shadow: 0px -2px 1px 0px rgba(0,0,0,0.5);
 }
-
-.scrollingUnit {
-  position: relative;
-}
-
-.scroller {
-  height: 100px;
-  width: 40px;
-  background: rgba(0,0,0,0.8);
-  position: absolute;
-  top: 35px;
-  z-index: 30;
-  line-height: 100px;
-  color: #eee;
-  font-weight: bold;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-.scroller.right {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.scroller.left {
-  left: 0;
-  border-radius: 0 3px 3px 0;
-}
-
-.linkCarousel {
-  position: relative;
-  margin-bottom: 10px;
-  height: 170px;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-.linkCarousel .linkHolder {
-  position: absolute;
-  text-align: center;
-  white-space: nowrap;
-  min-width: 100%;
-}
-
-.linkCarousel .linkBox.colored {
-  background: #97CAEE;
-}
-
-.linkCarousel .linkBox {
+.content .trailer {
   display: inline-block;
-  position: relative;
-  height: 160px;
-  width: 240px;
-  margin: 5px 5px;
-  color: #eee;
-  border-radius: 5px;
-  text-align: left;
-  white-space: normal;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  box-shadow: 0 0 2px #bbb;
 }
-
-.linkCarousel .linkBox:hover .desc {
-  opacity: 1;
+.content .description {
+  display: inline-block;
 }
-
-.linkCarousel .linkBox .desc {
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-  text-shadow: 0 0 2px #000;
-  background: rgba(0,0,0,0.7);
+.section-row {
+  display: flex;
+  justify-content: space-around;
 }
-
-.linkCarousel .linkBox:hover .title {
-  background: none;
+.navbar {
+  padding: 5px 10px;
+  border-bottom: 2px solid #222;
 }
-
-.linkCarousel .linkBox .title {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 5px;
-  border-radius: 0 0 5px 5px;
-  text-shadow: 0 0 1px #222;
-  font-weight: bold;
-  z-index: 20;
-  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.5) 99%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(20%,rgba(0,0,0,0.2)), color-stop(99%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 20%,rgba(0,0,0,0.5) 99%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 20%,rgba(0,0,0,0.5) 99%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 20%,rgba(0,0,0,0.5) 99%,rgba(0,0,0,0.5) 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 20%,rgba(0,0,0,0.5) 99%,rgba(0,0,0,0.5) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+.navbar a {
+  padding: 10px 20px;
+  font-size: 18px;
 }
-
+.jumbotron h1 {
+  margin-bottom: -8px;
+  font-size: 4em;
+}
+.jumbotron p {
+  font-size: 1.5em;
+}
 .jumbotron {
-  background-image: url('/images/pano.jpg');
+  background-image: url(/images/pano.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 0px -28px 4px -23px white inset;
-  padding: 220px 0 16px;
-  margin-bottom: 4px;
-  text-shadow: 0 0 6px #000;
+  box-shadow: 0px -90px 90px 0 white inset;
+  padding: 6px 120px 220px;
+  margin-bottom: -95px;
+  text-shadow: 1px 1px 0px rgba(0,0,0,.5);
   color: #fff;
   overflow: hidden;
-}
-
-.jumbotron .container {
-  transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
-}
-
-.jumbotron:hover .container {
-  opacity: 0;
-  -webkit-transform: translate(0,7em);
-  -moz-transform: translate(0,7em);
-  -o-transform: translate(0,7em);
-  -ms-transform: translate(0,7em);
-  transform: translate(0,7em);
 }
 
 .socialMedia {
@@ -211,67 +129,6 @@ a
   padding: 0 11px;
   color: #fff;
 }
-
-.navPlaceholder {
-  height: 50px;
-}
-
-.navbar-header {
-  z-index: 1;
-}
-
-.navbar-nav {
-  width: 75%;
-}
-
-.navbar li.right {
-  float: right;
-}
-
-.navbar {
-  margin: 0;
-  min-height: initial;
-  height: 50px;
-}
-
-.navbar-fixed-top {
-  position: absolute;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-  overflow: hidden;
-}
-
-.headshot {
-  width: 360px;
-  border-radius: 180px;
-  padding: 1px;
-  border: 1px solid #666;
-}
-
 footer {
   margin-bottom: 20px;
-}
-
-.imageFade .ghost img {
-  position: relative;
-  visibility: hidden;
-}
-
-.imageFade .hover img:hover {
-  opacity: 0;
-}
-
-.imageFade img {
-  position: absolute;
-  display: block;
-  left: 0;
-  top: 0;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-}
-
-.imageFade {
-  position: relative;
-  height: 100%;
 }

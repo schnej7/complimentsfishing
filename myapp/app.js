@@ -2,14 +2,12 @@ var express = require('express')
 var app = express()
 
 var moment = require('moment');
-var favicon = require('serve-favicon');
 
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 
 app.use(express.static(__dirname + '/public'));
-app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 app.use(morgan('dev')); // log every request to the console
 app.use(bodyParser()); // get information from html forms
