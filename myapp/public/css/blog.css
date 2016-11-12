@@ -1,0 +1,88 @@
+h1 {
+  margin: 0 0 10px;
+  border-bottom: 1px solid #3e3e3e;
+}
+
+.blogShadow {
+  position: relative;
+  width: 804px;
+  height: 370px;
+  margin: 0 auto;
+  background: #dddddd; /* Old browsers */
+  background: -moz-linear-gradient(top,  #dddddd 0%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #dddddd 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #dddddd 0%,#ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #dddddd 0%,#ffffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #dddddd 0%,#ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+  z-index: -1;
+}
+
+.blogBox {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: -370px;
+  min-height: 370px;
+  padding: 20px 30px;
+  color: #3e3e3e;
+  border-radius: 0 0 10px 10px;
+  background: #fff;
+  border-top: 1px solid#ddd;
+}
+
+.blogBox .photoGroup {
+  float: right;
+  max-width: 420px;
+}
+
+.blogBox .inlinePhoto {
+  float: right;
+  margin-left: 4px;
+  margin-bottom: 4px;
+}
+
+.blogBox .blogLink:hover {
+  background: #eee;
+}
+
+.blogBox .blogLink {
+  display: block;
+  padding: 5px;
+  box-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+  margin-bottom: 2px;
+}
+
+.blogBox .info {
+  margin-bottom: 4px;
+  color: #aaa;
+}
+
+.blogBox .socialBar {
+  margin-bottom: 10px;
+}
+
+.blogBox .fb-share {
+  display: inline-block;
+  background: #3a5795;
+  cursor: pointer;
+  color: #fff;
+}
+
+.blogBox .fb-share:hover {
+  opacity: 0.75;
+}
+
+.blogBox .fb-share .f {
+  padding: 7px 15px;
+  border-right: 1px solid rgba(256,256,256,0.3);
+}
+
+.blogBox .fb-share .text {
+  padding: 7px 14px;
+}
+
+.blogBox .fb-share .text,
+.blogBox .fb-share .f {
+  display: inline-block;
+}

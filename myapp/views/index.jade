@@ -1,0 +1,19 @@
+extends static_layout
+
+mixin linkBox(url, imageUrl, title, desc)
+    if( imageUrl != '' )
+        a.linkBox(href="#{url}", style="background-image:url('#{imageUrl}')")
+            div.title #{title}
+            div.desc #{desc}
+    else
+        a.linkBox.colored(href="#{url}")
+            div.title #{title}
+            div.desc #{desc}
+
+block pageBody
+    script(src="/js/base/scroller.js")
+    div.jumbotron
+        div.container
+            h1 Fishing for Compliments
+            p life's a fish
+
