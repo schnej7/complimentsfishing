@@ -1,0 +1,17 @@
+extends blogTemplate
+
+block customHead
+    +customSEO("First Blog Post", null, null, "article")
+
+block blogTitle
+    | First Blog Post
+
+block info
+    +date(2016, 11, 18)
+
+block share
+    +inlineFBShare
+
+block blogContent
+    p
+        | Hey guys, this is where my blog will be!
