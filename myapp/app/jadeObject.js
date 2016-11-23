@@ -3,10 +3,10 @@ var URL = require('url');
 
 function JadeObject(req){
 
-    this.myPath = "http://jerry-schneider.com"+URL.parse(req.originalUrl).pathname;
+    this.myPath = "http://complimentsfish.com"+URL.parse(req.originalUrl).pathname;
 
-    this.socialDescription = "Jerry Schneider's website has a lot of great games and articles.  Check out WordWizard, Marvel Puzzle Quest articles, emulators, and much more.";
-    this.socialImageUrl = "http://jerry-schneider.com/images/jerry2.jpg";
+    this.socialDescription = "Fishing for Compliments is the PREMIERE fishing channel for all thing fishing! There is no better resource for fishing, IT'S HUGE!";
+    this.socialImageUrl = "http://complimentsfish.com/images/MEAGAIN.png";
 
     this.year = (moment(Date.now())).format('YYYY');
 
