@@ -19,21 +19,21 @@ function FacebookHelper() {
 
     this.initPage = function() {
         window.fbAsyncInit = function() {
-            FB.init({
-                appId      : '810673575665099',
-                xfbml      : true,
-                version    : 'v2.2'
-            });
-            Facebook.initPage();
+          FB.init({
+            appId      : '1144016955705608',
+            xfbml      : true,
+            version    : 'v2.8'
+          });
         };
-
+        
         (function(d, s, id){
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {return;}
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+
         $(".fb-share").click(function(){
             Facebook.shareOnFacebook(this);
         });
@@ -41,4 +41,6 @@ function FacebookHelper() {
 }
 
 var Facebook = new FacebookHelper();
-Facebook.initPage();
+$(document).ready( function() {
+  Facebook.initPage();
+});
