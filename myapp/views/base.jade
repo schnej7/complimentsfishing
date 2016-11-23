@@ -11,10 +11,13 @@ mixin ga
     ga('send', 'pageview');
 
 mixin jquery
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
 
 mixin fbSDK()
     script(src="/js/social/facebook.js")
+
+mixin youtube()
+    script(src="https://apis.google.com/js/platform.js")
 
 mixin customSEO(seoTitle, desc, img, type)
   if !seoTitle
@@ -68,6 +71,7 @@ html
         block customHead
       title #{title}
       +jquery
+      +youtube
       +fbSDK
       +ga
       link(rel='stylesheet', href='/css/base.css')
