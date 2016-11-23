@@ -5,15 +5,15 @@ module.exports = function(app) {
     app.get('/', preReq, function (req, res) {
       res.render(
         'index',
-        jadeObject.basic(req, 'Jerry Schneider')
+        jadeObject.basic(req, 'Fishing for Compliments')
       )
     });
 
     app.get('/blog', preReq, function (req, res) {
       res.render(
         'blog',
-        jadeObject.basic(req, "Jerry's Blog")
-        .setSocialDescription("The most recent blog posts by Jerry Schneider are waiting to be read!")
+        jadeObject.basic(req, "Blog")
+        .setSocialDescription("The most recent blog posts by Fishing for Compliments are waiting to be read!")
       )
     });
 
@@ -26,13 +26,13 @@ module.exports = function(app) {
       res.render(
         "blog/"+filename,
         jadeObject.basic(req, filename)
-        .setSocialDescription("Read this article and more at jerry-schneider.com/blog!")
+        .setSocialDescription("Read this article and more at complimentsfish.com/blog!")
         .customSEO(true)
       )
     });
 
-    app.get('/google62bc3c09f7c33d86.html', preReq, function(req, res) {
-      res.sendfile('static/google62bc3c09f7c33d86.html');
+    app.get('/google83fbe56aa3c7f77e.html', preReq, function(req, res) {
+      res.sendfile('static/google83fbe56aa3c7f77e.html');
     });
 
     // accept POST request on the homepage
