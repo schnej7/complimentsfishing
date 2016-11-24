@@ -1,8 +1,3 @@
-h1 {
-  margin: 0 0 10px;
-  border-bottom: 1px solid #3e3e3e;
-}
-
 .blogShadow {
   position: relative;
   width: 804px;
@@ -80,9 +75,17 @@ h1 {
 
 .blogBox .fb-share .text {
   padding: 7px 14px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .blogBox .fb-share .text,
 .blogBox .fb-share .f {
   display: inline-block;
+}
+.blogContent p {
+  text-indent: 30px;
+}
+.blogContent > * {
+  margin: 10px 0;
 }

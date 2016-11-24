@@ -38,20 +38,20 @@ a
   padding-bottom: 10px;
   text-indent: 30px;
 }
-.content .trailer h2 {
+.content h2 {
   margin-bottom: 6px;
   text-align: center;
 }
-.content .trailer {
-  display: inline-block;
-}
-.content .description {
-  display: inline-block;
+.content .contentBlock {
   padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .section-row {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 40px;
 }
 .navbar {
   padding: 5px 10px;
@@ -88,13 +88,21 @@ a
 .jumbotron {
   background-image: url(/images/pano.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
   background-position: center;
   box-shadow: 0 -90px 90px 0 white inset;
   padding: 10px 120px 250px;
   margin-bottom: -235px;
   text-shadow: 1px 1px 0px rgba(0,0,0,.5);
   overflow: hidden;
+  transition: background-size 2s ease-in;
+  -moz-transition: background-size 2s ease-in;
+  -ms-transition: background-size 2s ease-in;
+  -o-transition: background-size 2s ease-in;
+  -webkit-transition: background-size 2s ease-in;
+}
+.jumbotron:hover {
+  background-size: 140% auto;
 }
 
 .socialMedia {
@@ -157,5 +165,6 @@ a
   font-weight: bold;
 }
 footer {
+  padding: 0 10px;
   margin-bottom: 20px;
 }
