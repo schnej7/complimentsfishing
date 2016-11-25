@@ -30,28 +30,43 @@ a
 .content {
   width: 1200px;
   margin: 0 auto;
-  padding: 30px 10px;
   background-color: #fff;
   border-radius: 10px 10px 0 0;
 }
 .content p {
   padding-bottom: 10px;
   text-indent: 30px;
+  text-shadow: 0 0 10px #fff;
+  color: #2c2c2c;
 }
 .content h2 {
   margin-bottom: 6px;
   text-align: center;
+  color: #3c3c3c;
+  text-shadow: 0px 0px 10px #fff;
+}
+.content .contentBlock.teaser {
+  padding-left: 15%;
+  padding-right: 15%;
 }
 .content .contentBlock {
-  padding: 0 30px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 .section-row {
   display: flex;
   justify-content: space-around;
   margin-bottom: 40px;
+  border-radius: 3px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eddcc9+0,e8cfb4+100 */
+  background: #eddcc9; /* Old browsers */
+  background: -moz-linear-gradient(top,  #eddcc9 0%, #e8cfb4 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #eddcc9 0%,#e8cfb4 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #eddcc9 0%,#e8cfb4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eddcc9', endColorstr='#e8cfb4',GradientType=0 ); /* IE6-9 */
 }
 .navbar {
   padding: 5px 10px;
